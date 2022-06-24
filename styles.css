@@ -1,14 +1,110 @@
 :root {
     /* --varname: varvalue; */
-
+    --imgmobile: url("/images/image-product-mobile.jpg");
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 640px) {
     /* for mobiles */
-
+    .main-container {
+        --flexdir: column;
+        --padding: 5% 0% 0% 0%;
+        --widthmain: 95%;
+    }
+    figure {
+        --heightfig: 325px;
+        --widthfig: 100%;
+    }
+    .product-image {
+        --imgmobile: url("/images/image-product-mobile.jpg");
+    }
+    .one {
+        --zindexone: 0;
+    }
+    .two {
+        --zindextwo: 1;
+    }
+    .card {
+        --widthcard: 100%;
+    }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 640px) {
     /* for desktop */
+    .main-container {
+        --flexdir: row;
+        --widthmain: 50%;
+        --padding: 8% 0 0 0;
+    }
+    figure {
+        --heightfig: 500px;
+        --widthfig: 50%;
+    }
+    .product-image {
+        --imgmobile: url("/images/image-product-desktop.jpg");
+    }
+    .one {
+        --zindexone: 1;
+    }
+    .two {
+        --zindextwo: 0;
+    }
+    .card {
+        --heightcard: 500px;
+        --widthcard: 50%;
+    }
+}
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(30, 38%, 92%); /* cream */
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: var(--flexdir);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: var(--widthmain);
+    padding: var(--padding);
+}
+
+figure {
+    width: var(--widthfig);
+    height: var(--heightfig);
+    margin: 0;
+    position: relative;
+    display: flex;
+}
+
+.product-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    /* background: var(--imgmobile) no-repeat center; */
+    /* background-size: contain; */
+}
+
+.one {
+    z-index: var(--zindexone);
+}
+
+.two {
+    z-index: var(--zindextwo);
+}
+
+.card {
+    width: var(--widthcard);
+    height: var(--heightcard);
+    background-color: hsl(0, 0%, 100%); /* white */
+}
+
+.attribution {
+    padding: 3%;
 }
