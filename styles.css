@@ -3,8 +3,8 @@
     --imgmobile: url("/images/image-product-mobile.jpg");
 }
 
+/* for mobiles */
 @media only screen and (max-width: 640px) {
-    /* for mobiles */
     .main-container {
         --flexdir: column;
         --padding: 5% 0% 0% 0%;
@@ -29,10 +29,71 @@
     .desktop {
         display: none;
     }
+    .buttonpad {
+        padding-bottom: 8%;
+    }
 }
 
-@media only screen and (min-width: 640px) {
-    /* for desktop */
+/* for more custom devices */
+@media only screen and (min-width: 640px) and (max-width:950px) {
+    .main-container {
+        --flexdir: row;
+        --widthmain: 85%;
+        --padding: 8% 0 0 0;
+    }
+    figure {
+        --heightfig: 500px;
+        --widthfig: 50%;
+    }
+    .product-image {
+        --imgmobile: url("/images/image-product-desktop.jpg");
+    }
+    .one {
+        --zindexone: 1;
+    }
+    .two {
+        --zindextwo: 0;
+    }
+    .card {
+        --heightcard: 500px;
+        --widthcard: 50%;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+/* for custom devices */
+@media only screen and (min-width: 950px) and (max-width: 1080px) {
+    .main-container {
+        --flexdir: row;
+        --widthmain: 60%;
+        --padding: 8% 0 0 0;
+    }
+    figure {
+        --heightfig: 500px;
+        --widthfig: 50%;
+    }
+    .product-image {
+        --imgmobile: url("/images/image-product-desktop.jpg");
+    }
+    .one {
+        --zindexone: 1;
+    }
+    .two {
+        --zindextwo: 0;
+    }
+    .card {
+        --heightcard: 500px;
+        --widthcard: 50%;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+/* for desktop */
+@media only screen and (min-width: 1080px) {
     .main-container {
         --flexdir: row;
         --widthmain: 50%;
@@ -65,7 +126,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: hsl(30, 38%, 92%); /* cream */
+    background-color: hsl(30, 38%, 92%);
     flex-direction: column;
 }
 
@@ -168,6 +229,8 @@ button {
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .no-margin {
