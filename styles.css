@@ -26,6 +26,9 @@
     .card {
         --widthcard: 100%;
     }
+    .desktop {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 640px) {
@@ -51,6 +54,9 @@
     .card {
         --heightcard: 500px;
         --widthcard: 50%;
+    }
+    .mobile {
+        display: none;
     }
 }
 
@@ -107,4 +113,63 @@ figure {
 
 .attribution {
     padding: 3%;
+}
+
+h4 {
+    text-align: left;
+    padding: 10% 5% 2% 10%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #b3b3b3;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0% 0% 0% 10%;
+    text-align: left;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    line-height: 105%;
+}
+
+p {
+    margin: 0;
+    text-align: left;
+    padding: 5% 0 3% 10%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+    word-spacing: 9px;
+    color: #737373;
+}
+
+.pricing-section {
+    display: flex;
+    padding: 9% 0 5% 10%;
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    align-items: center;
+    color: hsl(158, 36%, 37%);
+}
+
+.mrp-price {
+    padding: 0 0 0 10%;
+    font-size: 10px;
+    color: grey;
+}
+
+button {
+    width: 80%;
+    background-color: hsl(158, 36%, 37%);
+    height: 55px;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.no-margin {
+    margin: 0;
 }
