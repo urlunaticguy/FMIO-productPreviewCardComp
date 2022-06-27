@@ -3,46 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">  
   <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 18px; text-align: center; }
+    .attribution { font-size: 18px; text-align: center; padding: 3%;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <div class="main-container">
-    <figure>
-      <img class="product-image one" src="./images/image-product-desktop.jpg" alt="">
-      <img class="product-image two" src="./images/image-product-mobile.jpg" alt="">
+<body class="flex-center">
+  <div class="main-container flex-center">
+    <figure class="no-margin">
+      <img class="product-image one no-margin" src="./images/image-product-desktop.jpg" alt="">
+      <img class="product-image two no-margin" src="./images/image-product-mobile.jpg" alt="">
     </figure>
-
     <section class="card buttonpad">
-      <h4>
+      <h4 class="no-margin">
         PERFUME
       </h4>
-    
       <header>
-        <h1>
+        <h1 class="no-margin">
           Gabrielle <br class="desktop"> Essence <br class="mobile"> Eau De <br class="desktop"> Parfum
         </h1>
       </header>
-    
-      <p>
+      <p class="no-margin">
         A floral, solar and voluptuous <br> interpretation composed by <br class="desktop"> Olivier <br class="mobile"> Polge, 
       Perfumer-Creator <br class="desktop"> for the House of <br class="mobile"> CHANEL.
       </p>
-    
-      <section class="pricing-section">
+      <section class="pricing-section flex-center">
         <div class="actual-price">
           <h2 class="no-margin">
             $149.99
@@ -54,7 +46,6 @@
           </h2>
         </div>
       </section>
-      
       <button>
         <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/>
         </svg>
@@ -62,13 +53,11 @@
         Add to Cart
       </button>  
     </section>
-    
   </div>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Souvik Das</a>.
+    Coded by <a href="#">Souvik Das</a><br>
+    Tech used - HTML, CSS.
   </footer>
-  
-  
 </body>
 </html>
